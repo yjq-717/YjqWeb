@@ -1,0 +1,23 @@
+{
+  "id": "3905973",
+  "name": "nhentai",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "145426",
+      "name": "飞机场",
+      "font_class": "feijichang",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "1304890",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    }
+  ]
+}
