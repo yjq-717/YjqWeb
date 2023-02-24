@@ -43,11 +43,11 @@
         padding: 5px 0;
 
         .body {
-            max-width: 1150px;
+            max-width: 1110px;
             display: flex;
             margin: 0 auto;
             height: 100%;
-            justify-content: center;
+            justify-content: space-between;
             div {
                 height: 100%;
             }
@@ -59,7 +59,6 @@
             }
 
             .menu-header {
-                width: 870px;
                 height: 50px;
             }
 
@@ -79,6 +78,9 @@
                 }
                 div:hover {
                     color: #000000;
+                }
+                div:last-child {
+                   margin-right: 0;
                 }
 
                 .search {

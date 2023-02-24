@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="app">
         <mainHeader></mainHeader>
         <MainBody>
             <router-view></router-view>
@@ -22,6 +22,11 @@
     }
 </script>
 
-<style scoped>
-
+<style lang="less" scoped>
+    #app {
+        height: 100%;
+        color: #787878;
+        font-weight: bolder;
+        font-family: ui-sans-serif;
+    }
 </style>
