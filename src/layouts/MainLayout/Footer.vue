@@ -2,10 +2,11 @@
     <div  class="main-footer">
         <div class="body">
             <div class="language-footer">
-                <b-dropdown id="dropdown-left" text="Left align" variant="primary" class="m-2">
-                    <b-dropdown-item href="#">Action</b-dropdown-item>
-                    <b-dropdown-item href="#">Another action</b-dropdown-item>
-                    <b-dropdown-item href="#">Something else here</b-dropdown-item>
+                <b-dropdown id="dropdown-dropup" dropup text="🌐English" class="m-2" block size="sm" offset="0 5">
+                    <b-dropdown-item href="#">English</b-dropdown-item>
+                    <b-dropdown-item href="#">Chinese</b-dropdown-item>
+                    <b-dropdown-item href="#">Indonesian</b-dropdown-item>
+                    <b-dropdown-item href="#">French</b-dropdown-item>
                 </b-dropdown>
             </div>
             <div class="logo-footer">
@@ -28,30 +29,33 @@
 
 <style lang="less" scoped>
     .main-footer {
-        position: fixed;
-        bottom: 0;
         width: 100%;
         background: #eeeeee;
         height: 60px;
         padding: 5px 0;
 
         .body {
-            max-width: 1150px;
+            max-width: 1110px;
             margin: 0 auto;
             height: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             div {
                 height: 100%;
             }
 
             .language-footer {
-                width: 120px;
+
+                .m-2 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 !important;
+                }
             }
 
             .logo-footer {
                 cursor: pointer;
-                width: 773px;
                 height: 50px;
                 display: flex;
                 justify-content: center;

@@ -6,6 +6,62 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "730816",
+      "name": "右",
+      "font_class": "icon-arrow-right4",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "34207894",
+      "name": "右-copy",
+      "font_class": "icon-arrow-left4-copy",
+      "unicode": "e8b5",
+      "unicode_decimal": 59573
+    },
+    {
+      "icon_id": "4251717",
+      "name": "发现",
+      "font_class": "faxian",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "6151212",
+      "name": "tag",
+      "font_class": "tag",
+      "unicode": "e7f0",
+      "unicode_decimal": 59376
+    },
+    {
+      "icon_id": "11372686",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e8b4",
+      "unicode_decimal": 59572
+    },
+    {
+      "icon_id": "14680971",
+      "name": "icon-rise",
+      "font_class": "rise",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "25964422",
+      "name": "更新",
+      "font_class": "gengxin",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "705660",
+      "name": "地球",
+      "font_class": "diqiu",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
       "icon_id": "145426",
       "name": "飞机场",
       "font_class": "feijichang",
