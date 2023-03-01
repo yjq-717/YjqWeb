@@ -12,7 +12,7 @@
                     <i class="iconfont icon-sousuo"></i>
                 </div>
                 <div class="logo">
-                    <span>Login</span>
+                    <span @click="visible = true">Login</span>
                 </div>
                 <div class="register">
                     <b-button
@@ -25,12 +25,23 @@
                 </div>
             </div>
         </div>
+        <Login :visible.sync="visible"></Login>
     </div>
 </template>
 
 <script>
+    import Login from "@/components/Login";
+
     export default {
-        name: "MainHeader"
+        name: "MainHeader",
+        components: {
+            Login
+        },
+        data() {
+            return {
+                visible: false,
+            };
+        },
     }
 </script>
 
