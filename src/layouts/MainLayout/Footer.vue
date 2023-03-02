@@ -2,12 +2,12 @@
     <div  class="main-footer">
         <div class="body">
             <div class="language-footer">
-<!--                <b-dropdown id="dropdown-dropup" dropup text="🌐English" class="m-2" block size="sm" offset="0 5">-->
-<!--                    <b-dropdown-item href="#">English</b-dropdown-item>-->
-<!--                    <b-dropdown-item href="#">Chinese</b-dropdown-item>-->
-<!--                    <b-dropdown-item href="#">Indonesian</b-dropdown-item>-->
-<!--                    <b-dropdown-item href="#">French</b-dropdown-item>-->
-<!--                </b-dropdown>-->
+                <b-dropdown id="dropdown-dropup" dropup text="🌐English" class="m-2" block size="sm" offset="0 5">
+                    <b-dropdown-item href="#">English</b-dropdown-item>
+                    <b-dropdown-item href="#">Chinese</b-dropdown-item>
+                    <b-dropdown-item href="#">Indonesian</b-dropdown-item>
+                    <b-dropdown-item href="#">French</b-dropdown-item>
+                </b-dropdown>
             </div>
             <div class="logo-footer">
                 <img src="../../assets/logo.jpeg" alt=""/>

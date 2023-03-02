@@ -30,6 +30,8 @@
     import LayoutUnit from "@/components/LayoutUnit";
     import Tags from "@/components/Tags";
     import Frames from "@/components/Frame";
+    import home from "@/api/Home/home"
+
     export default {
         name: "WebHome",
         components: {
@@ -38,11 +40,17 @@
             Tags
         },
         mounted() {
-
+            this.getArticlesHot();
+        },
+        data() {
+            return {
+                articles: '',
+            };
         },
         methods: {
-            onclick() {
-                console.log('click')
+            async getArticlesHot() {
+                const res = await home.getArticlesHot(6);
+                console.log(res)
             }
         }
     }

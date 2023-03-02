@@ -4,7 +4,7 @@
                 @close="close"
                 :show-close="false"
                 :visible.sync="visible"
-                width="450px"
+                width="30em"
                 center>
             <div slot="title" class="title">
                 <div><i class="iconfont icon-login"></i></div>
