@@ -19,7 +19,7 @@
         name: "Frame",
         methods: {
             testClick() {
-              console.log('click')
+                this.$router.push({ name: 'comic' });
             },
         }
     }

@@ -20,6 +20,7 @@ export default {
   }
   body,html {
     height: 100%;
+    width: 100%;
   }
   li{
     list-style:none

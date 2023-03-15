@@ -2,7 +2,7 @@
     <div class="main-header">
         <div class="body">
             <div class="logo-header">
-                <img src="../../assets/logo.jpeg" alt=""/>
+                <img src="../../assets/logo.jpeg" alt="" @click="backHome"/>
             </div>
             <div class="menu-header">
 
@@ -12,7 +12,7 @@
                     <i class="iconfont icon-sousuo"></i>
                 </div>
                 <div class="logo">
-                    <span @click="visible = true">Login</span>
+                    <span @click="loginBtn">Login</span>
                 </div>
                 <div class="register">
                     <b-button
@@ -25,33 +25,39 @@
                 </div>
             </div>
         </div>
-        <Login :visible.sync="visible"></Login>
     </div>
 </template>
 
 <script>
-    import Login from "@/components/Login";
-
     export default {
         name: "MainHeader",
-        components: {
-            Login
-        },
         data() {
             return {
-                visible: false,
+
             };
         },
+        methods: {
+            loginBtn() {
+                this.$emit('loginBtn');
+            },
+            backHome() {
+                if (this.$route.name !== 'home') {
+                    this.$router.push({ name: 'home' });
+                }
+            }
+        }
     }
 </script>
 
 <style lang="less" scoped>
     .main-header {
-        /*position: fixed;*/
+        position: fixed;
+        top: 0;
         width: 100%;
         background: #eeeeee;
         height: 60px;
         padding: 5px 0;
+        z-index: 100;
 
         .body {
             max-width: 1110px;
@@ -64,6 +70,7 @@
             }
 
             .logo-header {
+                cursor: pointer;
                 img {
                     height: 50px;
                 }
