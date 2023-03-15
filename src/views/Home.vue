@@ -40,7 +40,7 @@
             Tags
         },
         mounted() {
-            this.getArticlesHot();
+            // this.getArticlesHot();
         },
         data() {
             return {
@@ -50,8 +50,7 @@
         methods: {
             async getArticlesHot() {
                 const res = await home.getArticlesHot(6);
-                console.log(res)
-            }
+            },
         }
     }
 </script>

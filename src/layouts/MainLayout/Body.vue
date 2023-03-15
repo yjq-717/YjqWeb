@@ -14,12 +14,13 @@
 
 <style lang="less" scoped>
     .main-body {
-        margin: 1.5rem 0;
+        padding: 5rem 0 1.5rem 0;
         width: 100%;
-        min-height: calc(100% - 120px - 3rem);
+        min-height: calc(100% - 60px);
 
         .content {
             max-width: 1150px;
+            width: 100%;
             padding: 0 20px;
             margin: 0 auto;
         }

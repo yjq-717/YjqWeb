@@ -6,8 +6,8 @@ import '@/assets/iconfont/iconfont.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-import { ButtonPlugin, DropdownPlugin } from 'bootstrap-vue'
-import axios from './request'
+import { ButtonPlugin, DropdownPlugin } from 'bootstrap-vue';
+import axios from './request';
 
 Vue.prototype.$axios = axios;
 Vue.use(ButtonPlugin)
