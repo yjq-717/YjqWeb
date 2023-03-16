@@ -1,23 +1,27 @@
 <template>
     <div>
+        <!--标签-->
         <LayoutUnit title="Tags" icon="icon-tag" maxNum="7">
             <template slot="module" v-for="item in 10">
                 <Tags></Tags>
             </template>
         </LayoutUnit>
         <br>
+        <!--人气-->
         <LayoutUnit title="Popular comics" icon="icon-rise" :viewAll="true" maxNum="6">
             <template slot="module" v-for="item in 8">
                 <Frames></Frames>
             </template>
         </LayoutUnit>
         <br>
+        <!--最新-->
         <LayoutUnit title="Popular comics" icon="icon-gengxin" :viewAll="true" maxNum="6">
             <template slot="module" v-for="item in 8">
                 <Frames></Frames>
             </template>
         </LayoutUnit>
         <br>
+        <!--发现-->
         <LayoutUnit title="Popular comics" icon="icon-faxian" maxNum="6">
             <template slot="module" v-for="item in 8">
                 <Frames></Frames>

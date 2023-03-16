@@ -51,7 +51,7 @@
                 <template  slot="module">
                     <el-row :gutter="20">
                         <el-col v-for="item in comicData.pageSize" :span="6">
-                            <el-image :src="`${comicData.pictureFolder}${item}.jpg`" alt="." :key="item" lazy>
+                            <el-image :src="`${comicData.pictureFolder}${item}.jpg`" alt="." :key="item" lazy @click="reader()">
                                 <el-skeleton slot="placeholder" style="width:100%;height: 260px" loading animated :count="10">
                                     <template slot="template">
                                         <el-skeleton-item
@@ -69,7 +69,7 @@
                             <i class="iconfont icon-gengduo"></i>
                             Load more
                         </span>
-                        <span>
+                        <span @click="reader()">
                             <i class="iconfont icon-fuhao-yuedu"></i>
                             Start reading
                         </span>
@@ -153,6 +153,9 @@
             loadMore() {
                 this.$refs.module.$refs.body.style.height = 'auto';
                 this.loadMoreBtn = false;
+            },
+            reader() {
+                this.$router.push({ name: 'reader' })
             }
         }
     }
