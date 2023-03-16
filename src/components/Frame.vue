@@ -33,7 +33,7 @@
         margin: 0 10px;
         height: 290px;
         padding: 8px;
-        background: #999999;
+        background: #c0c0c0;
         border-radius: 5px;
         color: #ffffff;
         font-size: 15px;
@@ -66,7 +66,7 @@
                 width: 100%;
                 line-height: 1.2;
                 /*height: 70%;*/
-                background: #999999;
+                background: #c0c0c0;
                 overflow: hidden;
                 text-overflow: ellipsis;
                 display: -webkit-box;
