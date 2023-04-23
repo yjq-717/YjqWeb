@@ -42,9 +42,9 @@
             LayoutUnit,
         },
         watch: {
-          page(val) {
-              console.log('num', val);
-          }
+          // page(val) {
+          //     console.log('num', val);
+          // }
         },
         mounted() {
             document.getElementsByClassName('main-footer')[0].style.display = 'none';
@@ -105,12 +105,16 @@
                 window.removeEventListener('scroll', this.handleScroll);
                 const imageTop = this.$refs.image[val -1].$el.offsetTop - 60;
                 document.documentElement.scrollTop = imageTop;
-                setInterval(() => {
+                let check = setInterval(() => {
                     if (document.documentElement.scrollTop === imageTop) {
-                        window.addEventListener('scroll', this.handleScroll)
+                        window.addEventListener('scroll', this.handleScroll);
+                        clearInterval(check);
                     }
                 },100)
             }
+        },
+        beforeDestroy() {
+            document.getElementsByClassName('main-footer')[0].style.display = 'block';
         },
     }
 </script>
@@ -137,6 +141,7 @@
             position: fixed;
             bottom: 20px;
             left: 20px;
+            width: 140px;
         }
 
         .reader-page-select  /deep/ .el-input__inner {
