@@ -16,6 +16,7 @@
                 </div>
                 <div class="register">
                     <b-button
+                            @click="registerBtn"
                             variant="primary"
                             size="sm"
                             style="font-weight: bolder;font-size: 13px"
@@ -39,6 +40,9 @@
         methods: {
             loginBtn() {
                 this.$emit('loginBtn');
+            },
+            registerBtn() {
+                this.$router.push({ name: 'register' });
             },
             backHome() {
                 if (this.$route.name !== 'home') {

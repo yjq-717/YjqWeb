@@ -1,5 +1,5 @@
 <template>
-  <Layout></Layout>
+  <router-view></router-view>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style>
-  *{
+  * {
     margin:0;
     padding:0;
   }
@@ -22,10 +22,13 @@ export default {
     height: 100%;
     width: 100%;
   }
-  li{
+  a {
+    text-decoration:none!important;
+  }
+  li {
     list-style:none
   }
-  img{
+  img {
     vertical-align:top;
     border:none
   }

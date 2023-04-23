@@ -1,0 +1,17 @@
+/*一级标题*/
+.title1 {
+    font-size: 72px;
+    font-weight: bolder;
+}
+/*二级标题*/
+.title2 {
+    font-size: 54px;
+}
+/*三级标题*/
+.title3 {
+    font-size: 36px;
+}
+/*四级标题*/
+.title4 {
+    font-size: 18px;
+}
